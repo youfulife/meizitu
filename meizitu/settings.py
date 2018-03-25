@@ -72,7 +72,7 @@ ITEM_PIPELINES = {
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 # AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-# AUTOTHROTTLE_START_DELAY = 5
+# AUTOTHROTTLE_START_DELAY = 1
 # The maximum download delay to be set in case of high latencies
 # AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
@@ -89,13 +89,13 @@ ITEM_PIPELINES = {
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-IMAGES_STORE = '/Users/youfu/meizitu/images'
+IMAGES_STORE = '/Users/youfu/meizitu/images/keep'
 IMAGES_URLS_FIELD = 'image_urls'
 IMAGES_RESULT_FIELD = 'images'
 IMAGES_MIN_HEIGHT = 300
 IMAGES_MIN_WIDTH = 300
-IMAGES_THUMBS = {
-    'small': (60, 60),
-    'big': (270, 270),
-}
-DEPTH_LIMIT = 2
+# IMAGES_THUMBS = {
+#     'small': (60, 60),
+#     'big': (270, 270),
+# }
+DEPTH_LIMIT = 1000

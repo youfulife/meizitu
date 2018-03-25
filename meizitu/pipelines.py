@@ -14,8 +14,8 @@ class MeizituPipeline(ImagesPipeline):
     def get_media_requests(self, item, info):
         # import pdb;pdb.set_trace()
         for image_url in item['image_urls']:
-            if 'mm.chinasareview.com' not in image_url:
-                continue
+            # if 'mm.chinasareview.com' not in image_url:
+            #     continue
             yield scrapy.Request(image_url.strip())
 
     def item_completed(self, results, item, info):
