@@ -2,3 +2,4 @@ images
 .DS_Store
 .idea
 *.pyc
+.vscode

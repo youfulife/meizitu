@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'meizitu.spiders'
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.37'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
@@ -89,7 +89,7 @@ ITEM_PIPELINES = {
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-IMAGES_STORE = '/Users/youfu/meizitu/images/keep'
+IMAGES_STORE = '/Users/youfu/meizitu/images/wxmeizitu'
 IMAGES_URLS_FIELD = 'image_urls'
 IMAGES_RESULT_FIELD = 'images'
 IMAGES_MIN_HEIGHT = 300
@@ -98,4 +98,4 @@ IMAGES_MIN_WIDTH = 300
 #     'small': (60, 60),
 #     'big': (270, 270),
 # }
-DEPTH_LIMIT = 1000
+DEPTH_LIMIT = 2
